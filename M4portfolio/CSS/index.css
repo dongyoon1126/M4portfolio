@@ -1,0 +1,446 @@
+@font-face {
+  font-family: 'SpoqaHanSansNeo-Medium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SpoqaHanSansNeo-Light';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SpoqaHanSansNeo-Thin';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Thin.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.only-macbook {
+  display: none;
+  font-weight: bold;
+}
+
+@media screen and (max-width:1000px) {
+  .page-container {
+    display: none;
+  }
+
+  .only-macbook {
+    font-size: 5rem;
+    display: block;
+    text-align: center;
+    line-height: 100vh;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .page-container {
+    display: none;
+  }
+
+  .only-macbook {
+    font-size: 5rem;
+    display: block;
+    text-align: center;
+    line-height: 100vh;
+  }
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'SpoqaHanSansNeo-Medium';
+}
+
+.page-container {
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+  overflow: auto;
+}
+
+p {
+  margin: 0;
+}
+
+.page {
+  width: 100vw;
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+.page-name {
+  font-size: 10rem;
+  font-weight: bold;
+  background-color: white;
+}
+
+.page-body {
+  font-family: 'SpoqaHanSansNeo-Thin';
+  font-size: 3rem;
+}
+
+/* main page */
+
+.main-background-img {
+  background-image: url(../img/main_page_background_img.png);
+  background-position: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+/* main page */
+
+/* profile page */
+.profile-page {
+  position: relative;
+}
+
+.profile-box {
+  position: relative;
+  width: 30rem;
+  top: 23%;
+  left: 7%;
+}
+
+.profile-img {
+  width: 25rem;
+  height: 25rem;
+  border-radius: 50rem;
+  margin: auto;
+  background-color: black;
+}
+
+.profile-text-box {
+  margin-top: 2rem;
+}
+
+.profile-text {
+  text-align: center;
+  font-size: 2rem;
+  margin: auto;
+}
+
+.profile-icon-box {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-icon {
+  margin-left: 2.5rem;
+}
+
+.right-icon {
+  margin-right: 2.5rem;
+}
+
+.profile-icon {
+  font-size: 5rem;
+  color: black;
+}
+
+.fa-phone-alt {
+  font-size: 4.5rem;
+}
+
+.profile-line {
+  border-left: 2px solid lightgray;
+  height: 50rem;
+  position: absolute;
+  top: 15%;
+  left: 35%;
+}
+
+.skill-box {
+  position: absolute;
+  left: 45%;
+  top: 20%;
+}
+
+.skill-title-text {
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.skill-text {
+  font-size: 3rem;
+  margin-top: 6rem;
+}
+
+.skill-text2 {
+  margin-top: 1rem;
+}
+
+.skill-icon-box {
+  width: 60rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill-icon {
+  font-size: 10rem;
+}
+
+.skill-icon2 {
+  width: 8.75rem;
+  margin-top: 1rem;
+}
+
+.skill-icon-box2 {
+  width: 32.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* profile page */
+
+/* project page */
+.project-background-img {
+  background-image: url(../img/project_page_background_img.png);
+  background-position: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.project-page-body {
+  align-items: center;
+  text-align: center;
+  position: relative;
+  padding-top: 8rem;
+}
+
+.project-page-main-text {
+  font-size: 10rem;
+  font-family: 'SpoqaHanSansNeo-Thin';
+}
+
+.project-btn-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 8rem;
+}
+
+.project-btn {
+  width: 48rem;
+  height: 36rem;
+  border: none;
+  background-color: transparent;
+}
+
+.project-img {
+  width: 100%;
+  height: 100%;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.project-btn :hover {
+  width: 50rem;
+  height: 38rem;
+}
+
+/* modal */
+
+.modal,
+.modal2 {
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal_content,
+.modal_content2 {
+  position: relative;
+  background-color: white;
+  text-align: center;
+  width: 800px;
+  overflow: hidden;
+}
+
+.modal-center,
+.modal-center2 {
+  width: 800px;
+  height: 600px;
+  display: flex;
+}
+
+.modal-img1,
+.modal-img2 {
+  width: 800px;
+  object-fit: contain;
+}
+
+.modal_overlay,
+.modal_overlay2,
+.modal_overlay3 {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -99;
+}
+
+.next-btn,
+.next-btn2,
+.prev-btn,
+.prev-btn2,
+.next-btn3,
+.prev-btn3 {
+  z-index: 2;
+  background-color: transparent;
+  border: 0;
+  font-size: 8rem;
+  margin: 5rem;
+  color: white;
+  cursor: pointer;
+}
+
+.next-btn:hover,
+.next-btn2:hover,
+.prev-btn:hover,
+.prev-btn2:hover,
+.next-btn3:hover,
+.prev-btn3:hover {
+  color: black;
+  transition: 1s;
+}
+
+/* modal */
+/* project page */
+/* hobby page */
+
+.hobby-background-img {
+  background-image: url(../img/hobby_page_background_img.png);
+  background-position: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.hobby-page {
+  position: relative;
+}
+
+.hobby-box {
+  width: 110rem;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -15rem;
+  margin-left: -55rem;
+}
+
+.hobby-img-text {
+  color: white;
+  line-height: 30rem;
+  text-align: center;
+  font-size: 5rem;
+  opacity: 0;
+}
+
+.hobby-img-background {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.hobby-img {
+  width: 30rem;
+  height: 30rem;
+}
+
+.fashion {
+  background-image: url(../img/fashion-img.jpg);
+  background-size: 100%;
+  background-position: center;
+}
+
+.photo {
+  background-image: url(../img/photo-img.jpg);
+  background-size: 100%;
+  background-position: center;
+}
+
+.design {
+  background-image: url(../img/design.jpg);
+  background-size: 120%;
+  background-position: center;
+}
+
+.hobby-img:hover {
+  cursor: pointer;
+}
+
+.hobby-img:hover .hobby-img-text {
+  opacity: 1;
+  transition: 1s;
+}
+
+.hobby-img:hover .hobby-img-background {
+  opacity: 1;
+  transition: 1s;
+}
+
+/* modal */
+  .modal-img3 {
+    width: 400px;
+    object-fit: contain;
+  }
+
+  .modal3 {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal_content3 {
+    position: relative;
+    background-color: white;
+    text-align: center;
+    width: 400px;
+    overflow: hidden;
+  }
+
+  .modal-center3 {
+    width: 400px;
+    /* height: 600px; */
+    display: flex;
+  }
+  
+/* modal */
+/* hobby page */
+
+.hidden {
+  display: none;
+}
